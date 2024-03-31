@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CypotoTrackerApp</title>
+    <link rel="stylesheet" href="./assets/css/comman.css" />
+    <link rel="stylesheet" href="./assets/css/search.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/bitcoin-search.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <!-- This is for the navigation bar-->
+    <nav>
+      <img src="./assets/images/logo.png" alt="Logo" class="logo-img" />
+      <h1 class="d-inline title ml-1" id="main-title">CryptoView</h1>
+      <button class="f-right nav-button" id="nav-search-button">Search</button>
+    </nav>
+
+    <section class="mt-1">
+      <h1 class="color-yellow text-center">Search</h1>
+      <div class="search-input-container mt-1">
+        <form action="" method="get">
+          <input class="search-bar" type="text" placeholder="Enter Coin Name ..." name="q" />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+      </div>
+      <hr />
+      <div class="search-result-container mt-1" id="search-results"></div>
+    </section>
+
+    <!-- This is for the footer-->
+    <footer>
+      <p class="d-inline">&copy; CryptoView | Developed by Avinash</p>
+      <a href="#" target="_blank">
+        <img
+          src="./assets/images/github.png"
+          alt="Github Logo"
+          class="footer-image f-right"
+        />
+      </a>
+    </footer>
+    <script src="./assets/js/comman.js"></script>
+    <script src="./assets/js/search.js"></script>
+  </body>
+</html>

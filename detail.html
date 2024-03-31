@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CypotoTrackerApp</title>
+    <link rel="stylesheet" href="./assets/css/comman.css" />
+    <link rel="stylesheet" href="./assets/css/detail.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/bitcoin-detail.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <!-- This is for the navigation bar-->
+    <nav>
+      <img src="./assets/images/logo.png" alt="Logo" class="logo-img" />
+      <h1 class="d-inline title ml-1" id="main-title">CryptoView</h1>
+      <button class="f-right nav-button" id="nav-search-button">Search</button>
+    </nav>
+    <!-- This is the description section -->
+    <section class="flex-container">
+      <img src="./assets/images/bitcoin-search.png" id="coin-logo" alt="Coin Logo" class="main-img"/>
+      <div class="main-contents">
+        <h1 class="mb-1 color-yellow" id="coin-name">...</h1>
+
+        <div class="flex-container space-around mb-1 mt-1">
+          <p>₹ <span id="inr-price">...</span></p>
+          <p>$ <span id="usd-price">...</span></p>
+          <p>€ <span id="eur-price">...</span></p>
+          <P>£ <span id="gbp-price">...</span></P>
+        </div>
+
+        <h3 class="mt-1">Description:</h3>
+        <p id="coin-description">🕵️‍♂️</p>
+      </div>
+    </section>
+
+    <!-- This is the price chart section -->
+    <section>
+      <h1 class="color-yellow mb-1 mt-1">Price History</h1>
+      <canvas id="myChart" width="100" height="25"></canvas>
+    </section>
+
+    <!-- This is for the footer-->
+    <footer>
+      <p class="d-inline">&copy; CryptoView | Developed by Avinash</p>
+      <a href="#" target="_blank">
+        <img
+          src="./assets/images/github.png"
+          alt="Github Logo"
+          class="footer-image f-right"
+        />
+      </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="./assets/js/comman.js"></script>
+    <script src="./assets/js/detail.js"></script>
+  </body>
+</html>
